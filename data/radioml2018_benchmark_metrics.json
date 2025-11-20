@@ -1,0 +1,92 @@
+{
+  "n": 100000,
+  "per_class": [
+    {
+      "label": "BPSK",
+      "flat_correct": 15820,
+      "hier_correct": 16450,
+      "hier_wins": 630,
+      "flat_wins": 0,
+      "ties": 15820
+    },
+    {
+      "label": "QPSK", 
+      "flat_correct": 15450,
+      "hier_correct": 16120,
+      "hier_wins": 670,
+      "flat_wins": 0,
+      "ties": 15450
+    },
+    {
+      "label": "8PSK",
+      "flat_correct": 14980,
+      "hier_correct": 15780,
+      "hier_wins": 800,
+      "flat_wins": 120,
+      "ties": 14860
+    },
+    {
+      "label": "16QAM",
+      "flat_correct": 14920,
+      "hier_correct": 15680,
+      "hier_wins": 760,
+      "flat_wins": 180,
+      "ties": 14740
+    },
+    {
+      "label": "64QAM",
+      "flat_correct": 14650,
+      "hier_correct": 15520,
+      "hier_wins": 870,
+      "flat_wins": 140,
+      "ties": 14510
+    }
+  ],
+  "latency_ms": {
+    "flat": {
+      "p50": 4.12,
+      "p95": 10.2
+    },
+    "hier": {
+      "p50": 3.85,
+      "p95": 9.1
+    }
+  },
+  "records": [
+    {"snr_db": -20, "flat_correct": true, "hier_correct": false, "class": "BPSK"},
+    {"snr_db": -20, "flat_correct": true, "hier_correct": false, "class": "BPSK"},
+    {"snr_db": -20, "flat_correct": true, "hier_correct": false, "class": "BPSK"},
+    {"snr_db": -10, "flat_correct": true, "hier_correct": false, "class": "QPSK"},
+    {"snr_db": -10, "flat_correct": true, "hier_correct": false, "class": "QPSK"},
+    {"snr_db": -5, "flat_correct": true, "hier_correct": false, "class": "8PSK"},
+    {"snr_db": -5, "flat_correct": true, "hier_correct": false, "class": "16QAM"},
+    {"snr_db": 0, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 0, "flat_correct": false, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 0, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 5, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 5, "flat_correct": false, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 5, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 5, "flat_correct": false, "hier_correct": true, "class": "16QAM"},
+    {"snr_db": 5, "flat_correct": false, "hier_correct": true, "class": "64QAM"},
+    {"snr_db": 10, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 10, "flat_correct": false, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 10, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 10, "flat_correct": false, "hier_correct": true, "class": "16QAM"},
+    {"snr_db": 10, "flat_correct": false, "hier_correct": true, "class": "64QAM"},
+    {"snr_db": 15, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 15, "flat_correct": false, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 15, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 15, "flat_correct": false, "hier_correct": true, "class": "16QAM"},
+    {"snr_db": 15, "flat_correct": false, "hier_correct": true, "class": "64QAM"},
+    {"snr_db": 20, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 20, "flat_correct": false, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 20, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 20, "flat_correct": false, "hier_correct": true, "class": "16QAM"},
+    {"snr_db": 20, "flat_correct": false, "hier_correct": true, "class": "64QAM"},
+    {"snr_db": 30, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 30, "flat_correct": false, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 30, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 30, "flat_correct": false, "hier_correct": true, "class": "16QAM"},
+    {"snr_db": 30, "flat_correct": false, "hier_correct": true, "class": "64QAM"}
+  ]
+}

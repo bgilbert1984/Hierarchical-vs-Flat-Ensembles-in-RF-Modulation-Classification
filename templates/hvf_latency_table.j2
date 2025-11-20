@@ -1,0 +1,16 @@
+% HVF Latency Comparison Table
+\begin{table}[!t]
+\centering
+\caption{Hierarchical vs Flat Ensemble Latency Performance}
+\label{tab:hvf_latency}
+\begin{tabular}{lccr}
+\toprule
+\textbf{Ensemble Type} & \textbf{Mean (ms)} & \textbf{Std Dev (ms)} & \textbf{99th \%ile (ms)} \\
+\midrule
+Hierarchical & {{ "%.1f" | format(latency_analysis.hierarchical.mean_ms) }} & {{ "%.1f" | format(latency_analysis.hierarchical.std_ms) }} & {{ "%.1f" | format(latency_analysis.hierarchical.percentiles["99th"]) }} \\
+Flat & {{ "%.1f" | format(latency_analysis.flat.mean_ms) }} & {{ "%.1f" | format(latency_analysis.flat.std_ms) }} & {{ "%.1f" | format(latency_analysis.flat.percentiles["99th"]) }} \\
+\midrule
+\textbf{Speedup} & \multicolumn{3}{c}{\textbf{{{ "%.2f" | format(latency_analysis.speedup_factor) }}$\times$}} \\
+\bottomrule
+\end{tabular}
+\end{table}

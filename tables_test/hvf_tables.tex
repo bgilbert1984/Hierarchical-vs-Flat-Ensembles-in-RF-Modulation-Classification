@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\caption{Per-class wins: hierarchical vs flat.}
+\begin{tabular}{lrrrrr}
+\toprule
+Class & Flat Correct & Hier Correct & Hier Wins & Flat Wins & Ties \\
+\midrule
+BPSK & 10 & 11 & 1 & 0 & 10 \\
+QPSK & 12 & 13 & 1 & 0 & 12 \\
+8PSK & 11 & 14 & 3 & 0 & 11 \\
+\bottomrule
+\end{tabular}
+\label{tab:hvf-per-class-wins}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Latency summary (ms) for Flat vs Hierarchical.}
+\begin{tabular}{lrr}
+\toprule
+ & p50 & p95 \\
+\midrule
+Flat & 3.38 & 9.04 \\
+Hier & 5.2 & 11.04 \\
+\bottomrule
+\end{tabular}
+\label{tab:hvf-latency}
+\end{table}
+

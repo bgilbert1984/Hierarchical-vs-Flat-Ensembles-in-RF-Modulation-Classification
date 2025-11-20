@@ -1,0 +1,17 @@
+% HVF Per-Class Wins Table
+\begin{table}[!t]
+\centering
+\caption{Per-Class Performance: Hierarchical vs Flat Ensemble Wins}
+\label{tab:hvf_wins}
+\begin{tabular}{lccr}
+\toprule
+\textbf{Class} & \textbf{Hierarchical} & \textbf{Flat} & \textbf{$\Delta$} \\
+\midrule
+{% for class_name in classification_wins.keys() -%}
+{{ class_name }} & {{ classification_wins[class_name].hierarchical }} & {{ classification_wins[class_name].flat }} & {{ classification_wins[class_name].hierarchical - classification_wins[class_name].flat }} \\
+{% endfor -%}
+\midrule
+\textbf{Total} & \textbf{{{ classification_wins.values() | map(attribute='hierarchical') | sum }}} & \textbf{{{ classification_wins.values() | map(attribute='flat') | sum }}} & \textbf{{{ (classification_wins.values() | map(attribute='hierarchical') | sum) - (classification_wins.values() | map(attribute='flat') | sum) }}} \\
+\bottomrule
+\end{tabular}
+\end{table}

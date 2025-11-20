@@ -1,0 +1,49 @@
+{# Per-class wins table #}
+\begin{table}[t]
+\centering
+\caption{Per-class wins: hierarchical vs flat.}
+\begin{tabular}{lrrrrr}
+\toprule
+Class & Flat Correct & Hier Correct & Hier Wins & Flat Wins & Ties \\
+\midrule
+{% for row in rows -%}
+{{row.label}} & {{row.flat_correct}} & {{row.hier_correct}} & {{row.hier_wins}} & {{row.flat_wins}} & {{row.ties}} \\
+{% endfor -%}
+\bottomrule
+\end{tabular}
+\label{tab:hvf-per-class-wins}
+\end{table}
+
+{# Latency summary table #}
+\begin{table}[t]
+\centering
+\caption{Latency summary (ms) for Flat vs Hierarchical.}
+\begin{tabular}{lrr}
+\toprule
+ & p50 & p95 \\
+\midrule
+Flat & {{lat.flat.p50|round(2)}} & {{lat.flat.p95|round(2)}} \\
+Hier & {{lat.hier.p50|round(2)}} & {{lat.hier.p95|round(2)}} \\
+\bottomrule
+\end{tabular}
+\label{tab:hvf-latency}
+\end{table}
+
+{% if snr_data and snr_data|length > 0 -%}
+{# Per-SNR advantage table (Hier - Flat); positive favors Hier #}
+\begin{table}[t]
+\centering
+\small
+\caption{Per-SNR hierarchical advantage (ADV $=$ Hier Wins $-$ Flat Wins).}
+\begin{tabular}{rrrrr}
+\toprule
+SNR (dB) & Flat Wins & Hier Wins & ADV & N \\
+\midrule
+{% for r in snr_data -%}
+{{ "%+d"|format(r.snr) }} & {{ r.flat_wins }} & {{ r.hier_wins }} & {{ r.adv }} & {{ r.n }} \\
+{% endfor -%}
+\bottomrule
+\end{tabular}
+\label{tab:hvf-snr-adv}
+\end{table}
+{% endif %}

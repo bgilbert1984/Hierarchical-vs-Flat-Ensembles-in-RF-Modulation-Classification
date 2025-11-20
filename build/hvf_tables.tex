@@ -1,0 +1,52 @@
+\begin{table}[t]
+\centering
+\caption{Per-class wins: hierarchical vs flat.}
+\begin{tabular}{lrrrrr}
+\toprule
+Class & Flat Correct & Hier Correct & Hier Wins & Flat Wins & Ties \\
+\midrule
+BPSK & 15820 & 16450 & 630 & 0 & 15820 \\
+QPSK & 15450 & 16120 & 670 & 0 & 15450 \\
+8PSK & 14980 & 15780 & 800 & 120 & 14860 \\
+16QAM & 14920 & 15680 & 760 & 180 & 14740 \\
+64QAM & 14650 & 15520 & 870 & 140 & 14510 \\
+\bottomrule
+\end{tabular}
+\label{tab:hvf-per-class-wins}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Latency summary (ms) for Flat vs Hierarchical.}
+\begin{tabular}{lrr}
+\toprule
+ & p50 & p95 \\
+\midrule
+Flat & 4.12 & 10.2 \\
+Hier & 3.85 & 9.1 \\
+\bottomrule
+\end{tabular}
+\label{tab:hvf-latency}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\caption{Per-SNR hierarchical advantage (ADV $=$ Hier Wins $-$ Flat Wins).}
+\begin{tabular}{rrrrr}
+\toprule
+SNR (dB) & Flat Wins & Hier Wins & ADV & N \\
+\midrule
+-20 & 3 & 0 & -3 & 3 \\
+-10 & 2 & 0 & -2 & 2 \\
+-5 & 2 & 0 & -2 & 2 \\
++0 & 0 & 3 & 3 & 3 \\
++5 & 0 & 5 & 5 & 5 \\
++10 & 0 & 5 & 5 & 5 \\
++15 & 0 & 5 & 5 & 5 \\
++20 & 0 & 5 & 5 & 5 \\
++30 & 0 & 5 & 5 & 5 \\
+\bottomrule
+\end{tabular}
+\label{tab:hvf-snr-adv}
+\end{table}

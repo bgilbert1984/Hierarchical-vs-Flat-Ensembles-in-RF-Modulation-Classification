@@ -1,0 +1,59 @@
+{
+  "n": 100,
+  "per_class": [
+    {
+      "label": "BPSK",
+      "flat_correct": 10,
+      "hier_correct": 11,
+      "hier_wins": 1,
+      "flat_wins": 0,
+      "ties": 10
+    },
+    {
+      "label": "QPSK",
+      "flat_correct": 12,
+      "hier_correct": 13,
+      "hier_wins": 1,
+      "flat_wins": 0,
+      "ties": 12
+    },
+    {
+      "label": "8PSK",
+      "flat_correct": 11,
+      "hier_correct": 14,
+      "hier_wins": 3,
+      "flat_wins": 0,
+      "ties": 11
+    }
+  ],
+  "latency_ms": {
+    "flat": {
+      "p50": 3.38,
+      "p95": 9.04
+    },
+    "hier": {
+      "p50": 5.20,
+      "p95": 11.04
+    }
+  },
+  "records": [
+    {"snr_db": -10, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": -10, "flat_correct": false, "hier_correct": false, "class": "QPSK"},
+    {"snr_db": -10, "flat_correct": true, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": -5, "flat_correct": false, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": -5, "flat_correct": true, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": -5, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 0, "flat_correct": true, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 0, "flat_correct": true, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 0, "flat_correct": true, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 5, "flat_correct": true, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 5, "flat_correct": true, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 5, "flat_correct": false, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 10, "flat_correct": true, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 10, "flat_correct": true, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 10, "flat_correct": true, "hier_correct": true, "class": "8PSK"},
+    {"snr_db": 15, "flat_correct": true, "hier_correct": true, "class": "BPSK"},
+    {"snr_db": 15, "flat_correct": false, "hier_correct": true, "class": "QPSK"},
+    {"snr_db": 15, "flat_correct": true, "hier_correct": true, "class": "8PSK"}
+  ]
+}
